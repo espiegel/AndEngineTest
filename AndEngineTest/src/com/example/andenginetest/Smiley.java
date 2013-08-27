@@ -15,6 +15,7 @@ import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 
 public class Smiley extends Sprite {
 
+	private boolean isSad = false;
 	private boolean isDeleted = false;
 	private Body mBody;
 	
@@ -47,5 +48,13 @@ public class Smiley extends Sprite {
 
 	public void setDeleted(boolean isDeleted) {
 		this.isDeleted = isDeleted;
+	}
+
+	public boolean isSad() {
+		return isSad;
+	}
+
+	public void setSad(boolean isSad) {
+		this.isSad = isSad;
 	}
 }
